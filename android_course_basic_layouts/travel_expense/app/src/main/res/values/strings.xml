@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TravelExpanse</string>
+    <string name="dist_ncia">Distância</string>
+    <string name="total_de_quil_metros">Total de quilômetros</string>
+    <string name="pre_o">Preço</string>
+    <string name="pre_o_por_litro">Preço por litro</string>
+    <string name="autonomia">Autonomia</string>
+    <string name="km_l">Km/L</string>
+    <string name="seu_gasto_total_sera_de">Seu gasto total sera de</string>
+    <string name="r_0">R$ 0</string>
+    <string name="calcular">Calcular</string>
+</resources>
