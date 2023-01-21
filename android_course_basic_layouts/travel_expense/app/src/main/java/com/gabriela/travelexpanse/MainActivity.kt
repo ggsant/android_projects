@@ -1,13 +1,12 @@
 package com.gabriela.travelexpanse
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.gabriela.travelexpanse.databinding.ActivityMainBinding
-import java.lang.Exception
 
-class MainActivity : AppCompatActivity() , View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
 
     // ciclo de vida activity
@@ -27,28 +26,22 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         // mas para isso devemos mplementar View.OnClickListener na classe
         binding.buttonCalculate.setOnClickListener(this)
         // Alem do método acima podemos utilizar o setOnClickListener que é um lamba:
-//        binding.buttonCalculate.setOnClickListener {
-//            calculate()
-//        }
-
-
-
+        //  binding.buttonCalculate.setOnClickListener {
+        //    calculate()
+        //  }
     }
 
-    fun calculate(){
-        // Toast Notification
-        // Toast.makeText(this, "Calculate clicked", Toast.LENGTH_SHORT).show()
-
-
+    private fun calculate() {
         try {
-            if (isValid()){
+            if (isValid()) {
                 val distance = binding.editDistance.text.toString().toFloat()
                 val price = binding.editPrice.text.toString().toFloat()
                 val autonomy = binding.editAutonomy.text.toString().toFloat()
                 val totalValue = (distance * price) / autonomy
-                binding.textviewTotalExpenseValue.text =  "R$ ${"%.2f".format(totalValue)}"
+                binding.textviewTotalExpenseValue.text = "R$ ${"%.2f".format(totalValue)}"
             } else {
-                val errorMessage = if (isDivisibleByAutonomy()) "Preencha todos os campos" else "A Autonomia não pode ser zero."
+                val errorMessage =
+                    if (isDivisibleByAutonomy()) "Preencha todos os campos" else "A Autonomia não pode ser zero."
                 Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
             }
 
@@ -57,13 +50,14 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         }
     }
 
-    private fun isValid() : Boolean = isNotEmptyFields() && isDivisibleByAutonomy()
+    private fun isValid(): Boolean = isNotEmptyFields() && isDivisibleByAutonomy()
 
-    private fun isNotEmptyFields() : Boolean {
-       return binding.editDistance.text.isNotEmpty() && binding.editPrice.text.isNotEmpty() && binding.editAutonomy.text.isNotEmpty()
+    private fun isNotEmptyFields(): Boolean {
+        return binding.editDistance.text.isNotEmpty() && binding.editPrice.text.isNotEmpty() && binding.editAutonomy.text.isNotEmpty()
     }
 
-    private fun isDivisibleByAutonomy() : Boolean = isNotEmptyFields() && binding.editAutonomy.text.toString().toFloat() != 0f
+    private fun isDivisibleByAutonomy(): Boolean =
+        isNotEmptyFields() && binding.editAutonomy.text.toString().toFloat() != 0f
 
     override fun onClick(view: View) {
         // Quando utilizamos o binding.buttonCalculate.setOnClickListener(this) teremos que
