@@ -1,8 +1,3 @@
 <resources>
-    <string name="app_name">exercises</string>
-    <string name="a">A</string>
-    <string name="text">Text</string>
-    <string name="botao">botao</string>
-    <string name="nome">nome</string>
-    <string name="um_android">um android</string>
+    <string name="app_name">Exercises</string>
 </resources>
