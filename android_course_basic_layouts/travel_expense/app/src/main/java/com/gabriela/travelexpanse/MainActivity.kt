@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     // onCreate é responsavel por criar uma activity, ela é instanciada e colocada na memoria
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Não esquecer de verificar se o ActivityMainBinding está habilitado no gradle. Se não estiver tem que habilitar
         // View Binding - conexão entre o layout e o código
         // ActivityMainBinding é uma classe criada para ajudar a mapear os elementos
         // layoutInflater torna possivel acessar os atributos de inface no código
