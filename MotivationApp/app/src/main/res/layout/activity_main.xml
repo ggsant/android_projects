@@ -19,18 +19,21 @@
         android:paddingBottom="16dp">
 
         <ImageView
+            android:id="@+id/ic_all_inclusive"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/ic_all_inclusive" />
 
         <ImageView
+            android:id="@+id/ic_happy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/ic_happy" />
 
         <ImageView
+            android:id="@+id/ic_sunny"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
