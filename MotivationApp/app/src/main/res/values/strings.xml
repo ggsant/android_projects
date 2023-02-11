@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Motivation</string>
     <string name="new_phrase">Nova frase</string>
-    <string name="your_name">Qual seu nome?</string>
+    <string name="your_name">nome</string>
     <string name="user">Usuário</string>
     <string name="phrase">Frase</string>
     <string name="save">Salvar</string>
@@ -11,4 +11,16 @@
     <string name="phrases_morning">Frases para manhã</string>
 
     <string name="validation_mandatory_name">Informe seu nome.</string>
+    <string name="enter_email">Digite seu email</string>
+    <string name="email">email</string>
+    <string name="error_email">Email errado</string>
+    <string name="password">senha</string>
+    <string name="enter">Entrar</string>
+    <string name="create_account">Criar conta</string>
+    <string name="enter_password">Digite sua senha</string>
+    <string name="error_login">Senha ou email errados. Tente novamente.</string>
+    <string name="error_create_account">Ocorreu um erro ao tentar criar sua conta. Tente novamente.</string>
+    <string name="error_empty_credentials">Nenhum campo deve ser vazio.</string>
+    <string name="motivation">Motivation</string>
+    <string name="logo">logo</string>
 </resources>
