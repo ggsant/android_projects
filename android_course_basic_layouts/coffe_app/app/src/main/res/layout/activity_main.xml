@@ -5,74 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondaryColor"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/intro_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="#FBBFB9"
         android:contentDescription="@string/intro_image_description"
         android:minWidth="500dp"
-        android:src="@drawable/drink06"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-       />
+        android:src="@drawable/drink06" />
 
     <TextView
         android:id="@+id/lets_start_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_image"
+        app:tint="#45484A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amita"
         android:paddingHorizontal="20dp"
-        android:paddingTop="100dp"
+        android:paddingTop="50dp"
         android:text="@string/intro_login"
         android:textColor="@color/dark_purple"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro_image"
-        app:tint="#45484A" />
+        android:textSize="20sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/enter_button"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lets_start_text_view"
+        app:strokeColor="@color/dark_purple"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:fontFamily="@font/amita"
         android:text="@string/enter"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lets_start_text_view"
-        app:strokeColor="@color/dark_purple" />
+        android:textColor="@color/dark_purple" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/create_account_button"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_button"
+        app:strokeColor="@color/dark_purple"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:fontFamily="@font/amita"
         android:text="@string/create_account"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_button"
-        app:strokeColor="@color/dark_purple" />
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/intro_text_view"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:fontFamily="@font/amita"-->
-    <!--        android:paddingHorizontal="20dp"-->
-    <!--        android:text="@string/intro_login"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        android:textSize="20sp"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/lets_start_text_view" />-->
+        android:textColor="@color/dark_purple" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

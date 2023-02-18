@@ -5,5 +5,6 @@
     <string name="enter">Entrar</string>
     <string name="create_account">Criar contar</string>
     <string name="intro_image_description">Uma imagem de um drink feito de espumante e algodão doce</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="email">email</string>
+    <string name="password">senha</string>
 </resources>

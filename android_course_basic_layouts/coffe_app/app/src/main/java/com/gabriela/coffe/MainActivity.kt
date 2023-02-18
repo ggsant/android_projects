@@ -1,5 +1,6 @@
 package com.gabriela.coffe
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -28,10 +29,12 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun openCreateAccountScreen() {
-        TODO("Not yet implemented")
+        val intent = Intent(this, CreateAccountActivity::class.java)
+        startActivity(intent)
     }
 
     private fun openLoginScreen() {
-        TODO("Not yet implemented")
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 }
