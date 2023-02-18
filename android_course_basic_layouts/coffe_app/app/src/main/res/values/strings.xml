@@ -4,4 +4,14 @@
     <string name="intro_login">Os melhores drinks para os melhores momentos. Fácil de fazer e de beber!</string>
     <string name="enter">Entrar</string>
     <string name="create_account">Criar contar</string>
+    <string name="intro_image_description">Uma imagem de um drink feito de espumante e algodão doce</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
