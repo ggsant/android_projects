@@ -2,4 +2,6 @@
     <string name="app_name">Cocktail</string>
     <string name="lets_start">Vamos começar</string>
     <string name="intro_login">Os melhores drinks para os melhores momentos. Fácil de fazer e de beber!</string>
+    <string name="enter">Entrar</string>
+    <string name="create_account">Criar contar</string>
 </resources>

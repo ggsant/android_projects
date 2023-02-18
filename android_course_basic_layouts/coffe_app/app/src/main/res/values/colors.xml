@@ -13,8 +13,8 @@
     <color name="primaryColor">#272727</color>
     <color name="colorPrimaryVariant">#3A3939</color>
     <color name="colorOnPrimary">#272727</color>
-    <color name="secondaryColor">#FFF283</color>
-    <color name="colorSecondaryVariant">#FFEB3B</color>
-    <color name="colorOnSecondary">#FFF283</color>
+    <color name="secondaryColor">#FFFBBFB9</color>
+    <color name="colorSecondaryVariant">#FF86AF</color>
+    <color name="colorOnSecondary">#FFFBBFB9</color>
 
 </resources>
