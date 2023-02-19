@@ -26,8 +26,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         setTheme(R.style.Theme_Coffe)
 
         binding.enterButton.setOnClickListener(this)
-//        binding.emailEditText.setOnClickListener(this)
-//        binding.passwordEditText.setOnClickListener(this)
     }
 
     private fun handleError(message: String?) {
