@@ -1,9 +1,10 @@
-package com.gabriela.coffe
+package com.gabriela.coffe.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityCreateAccountBinding
 
 class CreateAccountActivity : AppCompatActivity() , View.OnClickListener{

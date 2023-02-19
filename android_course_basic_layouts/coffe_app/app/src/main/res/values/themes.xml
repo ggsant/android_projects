@@ -16,5 +16,8 @@
         <item name="android:textColorSecondary">@color/dark_purple</item>
         <item name="android:actionMenuTextColor">@color/dark_purple</item>
         <item name="actionMenuTextColor">@color/dark_purple</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:textColor">@color/dark_purple</item>
+
     </style>
 </resources>

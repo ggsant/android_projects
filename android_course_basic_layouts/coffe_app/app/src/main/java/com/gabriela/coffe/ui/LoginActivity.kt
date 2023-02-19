@@ -1,12 +1,11 @@
-package com.gabriela.coffe
+package com.gabriela.coffe.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toolbar
-import androidx.core.content.ContextCompat
+import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {

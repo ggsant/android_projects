@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/secondaryColor"
     android:padding="20dp"
-    tools:context=".CreateAccountActivity">
+    tools:context=".ui.CreateAccountActivity">
 
     <ImageView
         android:id="@+id/intro_image"

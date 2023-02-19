@@ -1,9 +1,10 @@
-package com.gabriela.coffe
+package com.gabriela.coffe.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() , View.OnClickListener {
