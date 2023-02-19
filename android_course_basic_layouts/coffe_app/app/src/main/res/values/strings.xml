@@ -7,4 +7,10 @@
     <string name="intro_image_description">Uma imagem de um drink feito de espumante e algodão doce</string>
     <string name="email">email</string>
     <string name="password">senha</string>
+    <string name="error_login_credentials">Senha ou email errados. Tente novamente.</string>
+    <string name="error_login">Ocorreu um erro ao tentar entrar na sua conta. Tente novamente.</string>
+    <string name="error_create_account">Ocorreu um erro ao tentar criar sua conta. Tente novamente.</string>
+    <string name="error_empty_credentials">Email ou senha não preenchidos.</string>
+    <string name="error_account_not_found">Você ainda não possui uma conta cadastrada.</string>
+    <string name="error_generic">Um erro aconteceu. Tente novamente mais tarde.</string>
 </resources>
