@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityMainBinding
 import com.gabriela.motivationapp.infra.MotivationConstants
-import com.gabriela.motivationapp.infra.SecurityPreferences
+import com.gabriela.coffe.infra.SecurityPreferences
 
 class MainActivity : AppCompatActivity() , View.OnClickListener {
     private lateinit var binding: ActivityMainBinding

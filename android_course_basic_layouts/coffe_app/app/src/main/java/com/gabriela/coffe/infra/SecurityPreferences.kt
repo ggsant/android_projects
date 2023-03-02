@@ -1,4 +1,4 @@
-package com.gabriela.motivationapp.infra
+package com.gabriela.coffe.infra
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -13,5 +13,5 @@ class SecurityPreferences(context: Context) {
 
     fun saveBool(key: String, value: Boolean) = securityPreferences.edit().putBoolean(key, value).apply()
 
-    fun getBool(key: String) : Boolean = securityPreferences.getBoolean(key, false) ?: false
+    fun getBool(key: String) : Boolean = securityPreferences.getBoolean(key, false)
 }

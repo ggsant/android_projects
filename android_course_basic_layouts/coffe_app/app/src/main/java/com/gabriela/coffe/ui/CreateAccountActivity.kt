@@ -12,7 +12,7 @@ import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityCreateAccountBinding
 import com.gabriela.coffe.infra.Cryptography
 import com.gabriela.motivationapp.infra.MotivationConstants
-import com.gabriela.motivationapp.infra.SecurityPreferences
+import com.gabriela.coffe.infra.SecurityPreferences
 
 class CreateAccountActivity : AppCompatActivity() , View.OnClickListener{
     private lateinit var binding : ActivityCreateAccountBinding
