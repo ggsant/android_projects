@@ -4,10 +4,14 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityCreateAccountBinding
 import com.gabriela.coffe.infra.Cryptography
@@ -23,15 +27,21 @@ class CreateAccountActivity : AppCompatActivity() , View.OnClickListener{
         binding = ActivityCreateAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Criar conta"
+        supportActionBar?.setDisplayShowTitleEnabled(true)
+        supportActionBar?.title?.let {
+            val titleColor = ContextCompat.getColor(this, R.color.dark_purple)
+            val spannableString = SpannableString(it)
+            spannableString.setSpan(ForegroundColorSpan(titleColor), 0, it.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            supportActionBar?.title = spannableString
+        }
 
         setTheme(R.style.Theme_Coffe)
 
         binding.createAccountButton.setOnClickListener(this)
-//        binding.nameEditText.setOnClickListener(this)
-//        binding.emailEditText.setOnClickListener(this)
-//        binding.passwordEditText.setOnClickListener(this)
+        binding.nameEditText.setOnClickListener(this)
+        binding.emailEditText.setOnClickListener(this)
+        binding.passwordEditText.setOnClickListener(this)
 
     }
 

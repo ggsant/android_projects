@@ -13,4 +13,13 @@
     <string name="error_empty_credentials">Email ou senha não preenchidos.</string>
     <string name="error_account_not_found">Você ainda não possui uma conta cadastrada.</string>
     <string name="error_generic">Um erro aconteceu. Tente novamente mais tarde.</string>
+    <string name="gin_e_tonica">Gin e tonica</string>
+    <string name="time">11 minutos</string>
+    <string name="likes">12355 likes</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="ingredient1">- 50 ml de gym</string>
+    <string name="ingredient2">- 200 ml de agua tônica</string>
+    <string name="ingredient3">- 1 limão siciliano</string>
+    <string name="prepare_mode">Modo de preparo</string>
+    <string name="prepare_mode_text">Gelar a taça, jogar o excesso de água fora colocar uma rodela de limão siciliano cortada ao meio, adicione o gin e depois a água tônica, mexer levemente o drink e finalizar com o aroma da pele (zest) do limão</string>
 </resources>

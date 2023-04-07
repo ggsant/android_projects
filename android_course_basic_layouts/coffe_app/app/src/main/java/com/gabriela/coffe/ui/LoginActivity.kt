@@ -2,6 +2,9 @@ package com.gabriela.coffe.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -10,6 +13,7 @@ import com.gabriela.coffe.R
 import com.gabriela.coffe.databinding.ActivityLoginBinding
 import com.gabriela.motivationapp.infra.MotivationConstants
 import com.gabriela.coffe.infra.SecurityPreferences
+import androidx.core.content.ContextCompat
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginBinding
@@ -20,10 +24,14 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         setContentView(binding.root)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Login"
-
-        setTheme(R.style.Theme_Coffe)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
+        supportActionBar?.title?.let {
+            val titleColor = ContextCompat.getColor(this, R.color.dark_purple)
+            val spannableString = SpannableString(it)
+            spannableString.setSpan(ForegroundColorSpan(titleColor), 0, it.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            supportActionBar?.title = spannableString
+        }
 
         binding.enterButton.setOnClickListener(this)
     }
