@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mvvm Login</string>
+    <string name="enter">Entrar</string>
+    <string name="password">Senha</string>
+    <string name="email">Email</string>
+    <string name="login_mvvm">Login MVVM</string>
+</resources>
