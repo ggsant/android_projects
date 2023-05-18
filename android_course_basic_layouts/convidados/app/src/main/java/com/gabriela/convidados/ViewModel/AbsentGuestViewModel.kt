@@ -1,4 +1,4 @@
-package com.gabriela.convidados.ui
+package com.gabriela.convidados.ViewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
